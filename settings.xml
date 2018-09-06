@@ -18,7 +18,7 @@
      <mirror>
         <id>central</id>
         <name>central</name>
-        <url>https://terrible-wolverine-25.localtunnel.me/service/rest/repository/browse/maven-public/</url>
+        <url>https://nexus-domain.localtunnel.me/service/rest/repository/browse/maven-public/</url>
         <mirrorOf>*</mirrorOf>
      </mirror>
   </mirrors>
