@@ -37,11 +37,11 @@
   <distributionManagement>
         <snapshotRepository>
             <id>${repo.snapshots.credentials}</id>
-            <url>https://nexus-domain.localtunnel.me/service/rest/repository/browse/maven-snapshots/</url>
+            <url>https://nexus-domain.localtunnel.me/service/rest/repository/browse/maven-snapshots-local/</url>
         </snapshotRepository>
         <repository>
             <id>${repo.releases.credentials}</id>
-            <url>https://nexus-domain.localtunnel.me/service/rest/repository/browse/maven-releases/</url>
+            <url>https://nexus-domain.localtunnel.me/service/rest/repository/browse/maven-releases-local/</url>
         </repository>
     </distributionManagement>
 </project>
