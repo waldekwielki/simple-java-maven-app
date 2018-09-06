@@ -18,7 +18,7 @@
      <mirror>
         <id>central</id>
         <name>central</name>
-        <url>http://localhost:8081/service/rest/repository/browse/maven-public/</url>
+        <url>https://friendly-goat-90.localtunnel.me/service/rest/repository/browse/maven-public/</url>
         <mirrorOf>*</mirrorOf>
      </mirror>
   </mirrors>

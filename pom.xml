@@ -37,11 +37,11 @@
   <distributionManagement>
         <snapshotRepository>
             <id>${repo.snapshots.credentials}</id>
-            <url>http://localhost:8081/service/rest/repository/browse/maven-snapshots/</url>
+            <url>https://friendly-goat-90.localtunnel.me/service/rest/repository/browse/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>${repo.releases.credentials}</id>
-            <url>http://localhost:8081/service/rest/repository/browse/maven-releases/</url>
+            <url>https://friendly-goat-90.localtunnel.me/service/rest/repository/browse/maven-releases/</url>
         </repository>
     </distributionManagement>
 </project>
