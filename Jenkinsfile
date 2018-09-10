@@ -7,10 +7,6 @@ node {
         checkout scm
     }
 
-    stage('Maven clean install settings') {
-        sh 'mvn clean install -s settings.xml'
-    }
-
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
