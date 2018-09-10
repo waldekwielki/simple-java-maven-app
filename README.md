@@ -1,6 +1,6 @@
 # simple-java-maven-app
 
-This project is a copy of the one linked in the tutorial I used for Jenkins configuration :https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/
+This project is a copy of the one linked in the tutorial I used for Jenkins configuration: https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/
 
 # From the base project:
 The repository contains a simple Java application which outputs the string
@@ -12,4 +12,4 @@ JUnit XML report.
 
 Dockerfile is used to create a simple docker image with a couple of things installed. 
 Jenkinsfile defines the job, which builds the java app, the docker image, and deploys it to the nexus repository. 
-settings.xml and pom.xml files should provide the credentials to the nexus repository.
+
