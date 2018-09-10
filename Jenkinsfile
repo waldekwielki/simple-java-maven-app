@@ -33,7 +33,7 @@ node {
     }
 
     stage('Deploy Maven build') {
-        sh 'mvn deploy -P pod'
+        sh 'mvn deploy -P poc'
     }
 
     stage('Deploy Docker image') {
