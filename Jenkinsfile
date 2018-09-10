@@ -1,5 +1,6 @@
 node {
     def app
+    def URL
 
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
@@ -37,9 +38,9 @@ node {
     }
 
     stage('Deploy Docker image') {
-        url = "172.21.0.3:8083"
-        sh 'docker login -u operator -p operator ${url}'
-        sh 'docker tag simple-image ${url}/simple-image'
-        sh 'docker push ${url}/simple-image'
+        URL = "172.21.0.3:8083"
+        sh 'docker login -u operator -p operator ${URL}'
+        sh 'docker tag simple-image ${URL}/simple-image'
+        sh 'docker push ${URL}/simple-image'
     }
 }
