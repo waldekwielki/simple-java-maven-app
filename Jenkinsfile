@@ -37,9 +37,10 @@ node {
     }
 
     stage('Deploy Docker image') {
-        
-        environment {
-            URL = '172.21.0.3:8083'
+        steps{
+            script{
+                URL = '172.21.0.3:8083'
+            }
         }
         sh 'docker login -u operator -p operator $URL'
         sh 'docker tag simple-image $URL/simple-image'
