@@ -39,4 +39,10 @@ node {
     stage('Deploy Maven build') {
         sh 'mvn deploy -P pod'
     }
+
+    stage('Deploy Docker image') {
+        sh 'docker login -u operator -p operator 172.21.0.3:8083'
+        sh 'docker tag simple-image 172.21.0.3:8083/simple-image
+        sh 'docker push 172.21.0.3:8083/simple-image
+    }
 }
