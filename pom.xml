@@ -36,12 +36,12 @@
   </build>
   <distributionManagement>
         <snapshotRepository>
-            <id>${repo.snapshots.credentials}</id>
-            <url>http://172.21.0.3:8081/service/rest/repository/browse/maven-snapshots/</url>
+            <id>maven-snapshots</id>
+            <url>http://172.21.0.3:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
-            <id>${repo.releases.credentials}</id>
-            <url>http://172.21.0.3:8081/service/rest/repository/browse/maven-releases/</url>
+            <id>maven-releases</id>
+            <url>http://172.21.0.3:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 </project>

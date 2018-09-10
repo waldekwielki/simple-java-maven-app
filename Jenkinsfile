@@ -37,6 +37,6 @@ node {
     }
 
     stage('Deploy Maven build') {
-        sh 'mvn deploy'
+        sh 'mvn deploy -P pod'
     }
 }

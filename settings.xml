@@ -14,12 +14,27 @@
      </server>
   </servers>
 
- 
-
-  <profiles>
-     <profile>
-        <id>poc</id>
-     </profile>
-  </profiles>
+   <profiles>
+        <profile>
+            <id>poc</id>
+            <properties>
+                <repo.snapshots.url>http://172.21.0.3:8081/repository/maven-snapshots/</repo.snapshots.url>
+                <repo.releases.url>http://172.21.0.3:8081/repository/maven-releases/</repo.releases.url>
+            </properties>
+            <!-- OVERRIDE Central Repository -->
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://172.21.0.3:8081/repository/maven-public/</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://172.21.0.3:8081/repository/maven-public/</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
 
 </settings>
